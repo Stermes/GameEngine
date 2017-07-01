@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{35e31ee7-d68e-49f9-8dc9-731e6e3f974c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Vertex">
+      <UniqueIdentifier>{a93c5a70-f69d-4426-848f-7b0eb6a336ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Fragment">
+      <UniqueIdentifier>{050792c8-97b9-429f-b772-3220eb67e391}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicVertex.VS">
+      <Filter>Shaders\Vertex</Filter>
+    </None>
+    <None Include="BasicFragment.FS">
+      <Filter>Shaders\Fragment</Filter>
+    </None>
+  </ItemGroup>
+</Project>
