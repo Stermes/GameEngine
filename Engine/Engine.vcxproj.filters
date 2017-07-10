@@ -3,8 +3,49 @@
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="ShaderProgram.cpp" />
-    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Resources\Shader.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\ShaderProgram.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Texture.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Camera.cpp">
+      <Filter>GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\GameObject.cpp">
+      <Filter>GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\InputManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\WindowManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Time.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Transform.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObjects\SceneGraph.cpp">
+      <Filter>GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\RenderComponent.cpp">
+      <Filter>Components\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\SpriteRenderer.cpp">
+      <Filter>Components\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Component.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\RenderingManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Shaders">
@@ -16,17 +57,83 @@
     <Filter Include="Shaders\Fragment">
       <UniqueIdentifier>{050792c8-97b9-429f-b772-3220eb67e391}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{cbf00c2b-7c74-4349-b76a-aeb8753d9c60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Geometry">
+      <UniqueIdentifier>{697439bd-57c6-4842-8b97-ac23de871592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects">
+      <UniqueIdentifier>{b24125be-d349-467f-9439-929e82785e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{576d6abd-2a03-4a72-a290-f8524dae5cd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{9c724d66-ddc0-48c4-a1dc-4801f459dda4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{ec52264d-01ac-4875-acf2-1d26611e6d98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Renderers">
+      <UniqueIdentifier>{85dc2b50-71b1-4c4e-80d6-9c9e224a1dc6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BasicVertex.VS">
-      <Filter>Shaders\Vertex</Filter>
-    </None>
-    <None Include="BasicFragment.FS">
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="Resources\Shader.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\ShaderProgram.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Texture.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Camera.h">
+      <Filter>GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\GameObject.h">
+      <Filter>GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers\InputManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers\WindowManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Singleton.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Time.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Transform.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObjects\SceneGraph.h">
+      <Filter>GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\RenderComponent.h">
+      <Filter>Components\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\SpriteRenderer.h">
+      <Filter>Components\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Component.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers\RenderingManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Fragment\BasicFragment.FS">
       <Filter>Shaders\Fragment</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ShaderProgram.h" />
-    <ClInclude Include="Shader.h" />
+    <None Include="Shaders\Vertex\BasicVertex.VS">
+      <Filter>Shaders\Vertex</Filter>
+    </None>
   </ItemGroup>
 </Project>

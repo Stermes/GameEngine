@@ -19,18 +19,46 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Components\Component.cpp" />
+    <ClCompile Include="Components\RenderComponent.cpp" />
+    <ClCompile Include="Components\SpriteRenderer.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObjects\Camera.cpp" />
+    <ClCompile Include="GameObjects\GameObject.cpp" />
+    <ClCompile Include="GameObjects\SceneGraph.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="Shader.cpp" />
-    <ClCompile Include="ShaderProgram.cpp" />
+    <ClCompile Include="Managers\InputManager.cpp" />
+    <ClCompile Include="Managers\RenderingManager.cpp" />
+    <ClCompile Include="Managers\WindowManager.cpp" />
+    <ClCompile Include="Resources\Shader.cpp" />
+    <ClCompile Include="Resources\ShaderProgram.cpp" />
+    <ClCompile Include="Resources\Texture.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Utility\Time.cpp" />
+    <ClCompile Include="Utility\Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="BasicFragment.FS" />
-    <None Include="BasicVertex.VS" />
+    <ClInclude Include="Components\Component.h" />
+    <ClInclude Include="Components\RenderComponent.h" />
+    <ClInclude Include="Components\SpriteRenderer.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObjects\Camera.h" />
+    <ClInclude Include="GameObjects\GameObject.h" />
+    <ClInclude Include="GameObjects\SceneGraph.h" />
+    <ClInclude Include="Managers\InputManager.h" />
+    <ClInclude Include="Managers\RenderingManager.h" />
+    <ClInclude Include="Managers\WindowManager.h" />
+    <ClInclude Include="Resources\Shader.h" />
+    <ClInclude Include="Resources\ShaderProgram.h" />
+    <ClInclude Include="Resources\Texture.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="Utility\Singleton.h" />
+    <ClInclude Include="Utility\Time.h" />
+    <ClInclude Include="Utility\Transform.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Shader.h" />
-    <ClInclude Include="ShaderProgram.h" />
+    <None Include="Shaders\Fragment\BasicFragment.FS" />
+    <None Include="Shaders\Vertex\BasicVertex.VS" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
